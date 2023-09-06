@@ -8,298 +8,40 @@
   <meta name="CocoaVersion" content="2113.2">
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
 <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
 <p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;KPI Calculator&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f2f2f2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #007BFF;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 400px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 5px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.input-group {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>label {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #555;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="number"] {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 3px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>select {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 3px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>button {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #007BFF;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #fff;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>button:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#results {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #333;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 3px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>img {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 33.33%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#suggestions {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #FF0000;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;My Web Application&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
 <p class="p1"><span class="s1">&lt;body&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;KPI Calculator&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Welcome to My Web Application&lt;/h1&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://1-800salesengagement.carrd.co/assets/images/image05.jpg?v=b89d3322" alt="Your Business Logo"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;KPI Calculator&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;form id="kpiForm"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="connectRate"&gt;Connect Rate (%):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="connectRate" step="0.01" min="0" max="100" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="conversationRate"&gt;Connect To Conversation Rate (%):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="conversationRate" step="0.01" min="0" max="100" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="meetingRate"&gt;Conversation to Meeting Rate (%):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="meetingRate" step="0.01" min="0" max="100" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="meetingShowRatio"&gt;Meeting Show Ratio (%):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="meetingShowRatio" step="0.01" min="0" max="100" value="85" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="meetingGoal"&gt;Monthly Meeting Goal:&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="meetingGoal" min="0" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="businessDays"&gt;Business Days in Month:&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="businessDays" value="22" min="1" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="callSteps"&gt;Number of Call Steps in Sequence:&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="callSteps" min="1" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="sequenceDuration"&gt;Duration of Sequence (days):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="sequenceDuration" min="1" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="callStepFrequency"&gt;Call Step Frequency (days):&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;select id="callStepFrequency"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;option value="1"&gt;Every 1 Day&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;option value="2"&gt;Every 2 Days&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;option value="3"&gt;Every 3 Days&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="input-group"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;label for="currentProspects"&gt;Current Prospects in Sequence Today:&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="currentProspects" min="0" required&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button type="button" onclick="calculateKPI()"&gt;Calculate&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button type="button" onclick="clearFields()"&gt;Clear&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="results"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="requiredDialsDaily"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="requiredMeetingsDaily"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="requiredSequencesDaily"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="meetingMultiplier"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="dialsForMultiplier"&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="suggestions"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Suggestions will be displayed here --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function calculateKPI() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const connectRate = parseFloat(document.getElementById("connectRate").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const conversationRate = parseFloat(document.getElementById("conversationRate").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingRate = parseFloat(document.getElementById("meetingRate").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingGoal = parseInt(document.getElementById("meetingGoal").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const businessDays = parseInt(document.getElementById("businessDays").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const callSteps = parseInt(document.getElementById("callSteps").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const sequenceDuration = parseInt(document.getElementById("sequenceDuration").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const callStepFrequency = parseInt(document.getElementById("callStepFrequency").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const currentProspects = parseInt(document.getElementById("currentProspects").value);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingShowRatio = parseFloat(document.getElementById("meetingShowRatio").value);</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(connectRate) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(conversationRate) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(meetingRate) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(meetingGoal) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(businessDays) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(callSteps) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(sequenceDuration) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(callStepFrequency) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(currentProspects) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isNaN(meetingShowRatio) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>connectRate &lt; 0 || connectRate &gt; 100 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>conversationRate &lt; 0 || conversationRate &gt; 100 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>meetingRate &lt; 0 || meetingRate &gt; 100 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>callSteps &lt; 1 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>sequenceDuration &lt; 1 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>(callStepFrequency !== 1 &amp;&amp; callStepFrequency !== 2 &amp;&amp; callStepFrequency !== 3) ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>currentProspects &lt; 0 ||</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>meetingShowRatio &lt; 0 || meetingShowRatio &gt; 100</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>alert("Please enter valid values.");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Suggestions for improving input values</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let suggestions = [];</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (connectRate &lt; 10) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestions.push("Consider improving your outreach strategies to increase connect rates.");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (conversationRate &lt; 20) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestions.push("Focus on improving your messaging and engagement techniques to increase conversation rates.");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (meetingRate &lt; 5) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestions.push("Enhance your meeting scheduling and follow-up processes to boost meeting conversion rates.");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Display suggestions</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const suggestionsDiv = document.getElementById("suggestions");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>suggestionsDiv.innerHTML = ""; // Clear previous suggestions</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (suggestions.length &gt; 0) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestionsDiv.innerHTML = "&lt;p&gt;Suggestions to Improve:&lt;/p&gt;&lt;ul&gt;";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestions.forEach(suggestion =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>suggestionsDiv.innerHTML += `&lt;li&gt;${suggestion}&lt;/li&gt;`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestionsDiv.innerHTML += "&lt;/ul&gt;";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>suggestionsDiv.innerHTML = "&lt;p&gt;Your input values meet industry standards.&lt;/p&gt;";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Calculations and results</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const adjustedMeetingRate = meetingRate * (meetingShowRatio / 100);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const requiredDialsPerDay = (meetingGoal / (connectRate / 100) / (conversationRate / 100) / (adjustedMeetingRate / 100) / businessDays).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const requiredMeetingsPerDay = (requiredDialsPerDay * (connectRate / 100) * (conversationRate / 100) * (adjustedMeetingRate / 100)).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const callsPerSequence = callSteps * (sequenceDuration / callStepFrequency);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const requiredSequencesPerDay = (requiredDialsPerDay / callsPerSequence).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let prospectsToSequenceDaily = (requiredSequencesPerDay - currentProspects).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>prospectsToSequenceDaily = Math.max(prospectsToSequenceDaily, 0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const minProspectsToMaintainSequences = (currentProspects + (requiredSequencesPerDay * businessDays)).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("requiredDialsDaily").textContent = `You need to make approximately ${requiredDialsPerDay} dials per business day to achieve your Monthly Meeting KPI.`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("requiredMeetingsDaily").textContent = `This will result in approximately ${requiredMeetingsPerDay} meetings set per business day.`;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (prospectsToSequenceDaily === "0.0") {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById("requiredSequencesDaily").textContent = `To maintain leads, you should have at least ${minProspectsToMaintainSequences} prospects in sequence each business day.`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById("requiredSequencesDaily").textContent = `To maintain leads, you should sequence approximately ${prospectsToSequenceDaily} prospects per business day.`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingMultiplier1 = (meetingGoal * 1.5).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingMultiplier2 = (meetingGoal * 2).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const meetingMultiplier3 = (meetingGoal * 3).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("meetingMultiplier").innerHTML = `</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>To achieve:&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 1.5x your meeting quota, aim for approximately ${meetingMultiplier1} meetings per month.&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 2x your meeting quota, aim for approximately ${meetingMultiplier2} meetings per month.&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 3x your meeting quota, aim for approximately ${meetingMultiplier3} meetings per month.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const dialsForMultiplier1 = (meetingMultiplier1 / (connectRate / 100) / (conversationRate / 100) / (adjustedMeetingRate / 100) / businessDays).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const dialsForMultiplier2 = (meetingMultiplier2 / (connectRate / 100) / (conversationRate / 100) / (adjustedMeetingRate / 100) / businessDays).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const dialsForMultiplier3 = (meetingMultiplier3 / (connectRate / 100) / (conversationRate / 100) / (adjustedMeetingRate / 100) / businessDays).toFixed(1);</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("dialsForMultiplier").innerHTML = `</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>To achieve:&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 1.5x your meeting quota, you need to make approximately ${dialsForMultiplier1} dials per business day.&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 2x your meeting quota, you need to make approximately ${dialsForMultiplier2} dials per business day.&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>- 3x your meeting quota, you need to make approximately ${dialsForMultiplier3} dials per business day.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function clearFields() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const inputFields = document.querySelectorAll('input[type="number"]');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>inputFields.forEach(field =&gt; field.value = "");</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const suggestionsDiv = document.getElementById("suggestions");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>suggestionsDiv.innerHTML = "";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;About&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;This is a basic web application template.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Features&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;Feature 1&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;Feature 2&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;Feature 3&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2023 My Web Application&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
 <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
